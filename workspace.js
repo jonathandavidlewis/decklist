@@ -20,9 +20,9 @@
 */
 $(document).ready(function (){
 	$('button').click(function (){
-		$('#deckList').append("<ul>" + $("input[name=card]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+		$('#deckList').append("<li>" + "<div class='cardholder'></div>" + " <a href='#' class='close' aria-hidden='true'>&times;</a></li>");
 	});
 	$("body").on('click', '#deckList a', function (){
-		$(this).closest("ul").remove();
+		$(this).closest("li").remove();
 	});
 });
