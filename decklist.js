@@ -1,15 +1,4 @@
 /*
- How to Apply These Terms to Your New Programs
-
-  If you develop a new program, and you want it to be of the greatest
-possible use to the public, the best way to achieve this is to make it
-free software which everyone can redistribute and change under these terms.
-
-  To do so, attach the following notices to the program.  It is safest
-to attach them to the start of each source file to most effectively
-state the exclusion of warranty; and each file should have at least
-the "copyright" line and a pointer to where the full notice is found.
-
     Create edit save and retrieve trading card game decklists.
     Copyright (C) 2017 Drew Billings
 
@@ -31,7 +20,7 @@ the "copyright" line and a pointer to where the full notice is found.
 */
 $(document).ready(function (){
 	$('button').click(function (){
-		$('#deckList').append("<ul>" + $("input[name=card]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+		$('#deckList').append("<li>" + $("input[name=card]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></li>");
 	});
 	$("body").on('click', '#deckList a', function (){
 		$(this).closest("ul").remove();
