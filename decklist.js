@@ -20,7 +20,7 @@
 */
 $(document).ready(function (){
 	$('button').click(function (){
-		$('#deckList').append("<li>" + $("input[name=card]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></li>");
+		$('#deckList').append("<ul>" + $("input[name=card]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
 	});
 	$("body").on('click', '#deckList a', function (){
 		$(this).closest("ul").remove();
