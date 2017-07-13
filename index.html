@@ -39,11 +39,12 @@ the "copyright" line and a pointer to where the full notice is found.
 <body>
 	<div class="form-group">
 		<h1>Deck <small>List</small></h1>
-			<form role="form">
-				<input type="text" class="form-control" placeholder="Card Name" name="card">
-			</form>
+			<form role="form" action="/action_page.php" method="get">
+				<input type="text" class="form-control" placeholder="Card Name" name="card">	
+			<button type="button" class="btn btn btn-info">Search</button>
 			<button type="button" class="btn btn btn-primary">Add</button>
 			<button type="button" class="btn btn btn-primary">Save</button>
+			</form>
 		</div>
 		<div></div>
 	<ul class="list-unstyled" id="deckList"></ul>
